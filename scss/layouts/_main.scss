@@ -1,0 +1,70 @@
+.contact {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  top: 5vh;
+  flex-direction: column;
+
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $text-color;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0 5px;
+    outline: 1px transparent;
+    transition: all .6s ease;
+  }
+
+  .bx {
+    height: 30px;
+    width: 30px;
+  }
+
+  a:hover {
+    outline: 1px solid $primary-color;
+  }
+}
+.icons {
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+
+  i {
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+
+    span {
+      color: $text-color;
+    }
+  }
+}
+h1 {
+  @include center-content;
+  position: relative;
+  top: 10vh;
+  font-size: 25px;
+  font-weight: 700;
+  color: $primary-color;
+}
+section {
+  @include center-content;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  p {
+    height: auto;
+    width: 50%;
+  }
+}

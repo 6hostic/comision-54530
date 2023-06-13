@@ -34,7 +34,7 @@ header {
     margin-right: 20px; }
   header nav ul li a {
     text-decoration: none;
-    color: #fff; }
+    color: #c5c5c5; }
   header nav ul li a:hover {
     color: #9e7aff;
     filter: blur(0.07rem); }

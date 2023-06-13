@@ -1,0 +1,28 @@
+header {
+  background: rgba(48, 48, 48, 0.5);
+  border: 1px solid;
+  border-radius: 15px;
+  border-color: #3d3d3d;
+  color: #f5f5f5;
+  margin: .7%;
+  padding: 10px;
+  .select {
+    color: $primary-color;
+    filter: blur(0.07rem);
+  }
+  nav ul {
+    @include center-content;
+    list-style: none;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: $text-color;
+  }
+  nav ul li a:hover {
+    color: $primary-color;
+    filter: blur(0.07rem); 
+  }
+}

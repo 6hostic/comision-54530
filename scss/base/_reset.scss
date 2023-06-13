@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
+}
+
+body {
+  background-image: url(../assets/graphy-dark.png);
+  background-color: #111111;
+  p {
+    color: #c5c5c5;
+    font-weight: 500;
+  }
+}
