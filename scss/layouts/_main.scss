@@ -11,12 +11,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: $text-color;
+    color: #c5c5c5;
     font-weight: 500;
     font-size: 30px;
     padding: 0 5px;
     outline: 1px transparent;
-    transition: all .6s ease;
+    transition: all .6s ease-in-out;
   }
 
   .bx {
@@ -28,6 +28,20 @@
     outline: 1px solid $primary-color;
   }
 }
+
+h1 {
+  @include center-content;
+  position: relative;
+  top: 10vh;
+  font-size: 25px;
+  font-weight: 700;
+  color: #9e7aff;
+  transition: all .6s ease-in-out;
+}
+h1:hover {
+  color: aqua;
+  transition: all .6s ease-in-out;
+}
 .icons {
   display: grid;
   position: absolute;
@@ -36,24 +50,20 @@
   gap: 15px;
 
   i {
-    color: $primary-color;
+    color: #9e7aff;
     display: flex;
     align-items: center;
     gap: 5px;
     flex-direction: column;
 
     span {
-      color: $text-color;
+      color: #c5c5c5;
     }
   }
-}
-h1 {
-  @include center-content;
-  position: relative;
-  top: 10vh;
-  font-size: 25px;
-  font-weight: 700;
-  color: $primary-color;
+  i:hover {
+    @extend h1:hover;
+    outline: 1px solid $primary-color;
+  }
 }
 section {
   @include center-content;

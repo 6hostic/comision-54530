@@ -13,16 +13,17 @@ header {
   nav ul {
     @include center-content;
     list-style: none;
-  }
-  nav ul li {
-    margin-right: 20px;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: $text-color;
-  }
-  nav ul li a:hover {
-    color: $primary-color;
-    filter: blur(0.07rem); 
+    li {
+      margin-right: 20px;
+      a {
+        text-decoration: none;
+        color: $text-color;
+        transition: all .6s ease-in-out;
+      }
+      a:hover {
+        color: $primary-color;
+        filter: blur(0.07rem); 
+      }
+    } 
   }
 }
